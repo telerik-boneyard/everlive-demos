@@ -1,0 +1,41 @@
+doctype 5
+html
+  head
+    title Dashboard :: Login
+    link(rel='stylesheet', href='//cdn.kendostatic.com/2013.3.1119/styles/kendo.common.min.css')
+    link(rel='stylesheet', href='//cdn.kendostatic.com/2013.3.1119/styles/kendo.bootstrap.min.css')
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='stylesheets/style.css')
+  body
+    .login.well
+      h1  Please log in...
+      hr
+      form(id='login-form', method='POST', action='/login' novalidate)
+        .form-group
+          label(for='username') Username
+          input(type='text', name='username', class='form-control', 
+            id='username', placeholder='Enter username',
+            required, data-required-msg='Username is required')
+        .form-group
+          label(for='password') Password
+          input(type='password', name='password', class='form-control', 
+            id='password', placeholder='Enter password',
+            required, data-required-msg='Password is required')
+        .form-group
+          button.btn.btn-default Login  
+          a(href="register") Or Register
+        include messages
+
+  script(src='//code.jquery.com/jquery-1.9.1.min.js')
+  script(src='//cdn.kendostatic.com/2013.3.1119/js/kendo.all.min.js')
+
+  script
+
+    $(function() {
+
+      // validate the login form before submit
+      $("#login-form").kendoValidator();
+
+    });
+
+

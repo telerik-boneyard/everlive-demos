@@ -1,0 +1,243 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'jade' ]
+2 info using npm@1.2.32
+3 info using node@v0.10.12
+4 verbose read json /usr/local/lib/package.json
+5 verbose read json /usr/local/lib/package.json
+6 verbose cache add [ 'jade', null ]
+7 verbose cache add name=undefined spec="jade" args=["jade",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'jade',
+8 verbose parsed url   path: 'jade',
+8 verbose parsed url   href: 'jade' }
+9 silly lockFile 5bd60fae-jade jade
+10 verbose lock jade /Users/burkeholland/.npm/5bd60fae-jade.lock
+11 silly lockFile 5bd60fae-jade jade
+12 silly lockFile 5bd60fae-jade jade
+13 verbose addNamed [ 'jade', '' ]
+14 verbose addNamed [ null, '' ]
+15 silly lockFile 51d481b2-jade jade@
+16 verbose lock jade@ /Users/burkeholland/.npm/51d481b2-jade.lock
+17 silly addNameRange { name: 'jade', range: '', hasData: false }
+18 verbose url raw jade
+19 verbose url resolving [ 'https://registry.npmjs.org/', './jade' ]
+20 verbose url resolved https://registry.npmjs.org/jade
+21 info trying registry request attempt 1 at 13:20:53
+22 verbose etag "F2QMJ6MCZMFS3P14NUMWABTCQ"
+23 http GET https://registry.npmjs.org/jade
+24 http 304 https://registry.npmjs.org/jade
+25 silly registry.get cb [ 304,
+25 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+25 silly registry.get     etag: '"F2QMJ6MCZMFS3P14NUMWABTCQ"',
+25 silly registry.get     date: 'Sat, 23 Nov 2013 19:20:57 GMT',
+25 silly registry.get     'content-length': '0' } ]
+26 verbose etag jade from cache
+27 silly addNameRange number 2 { name: 'jade', range: '', hasData: true }
+28 silly addNameRange versions [ 'jade',
+28 silly addNameRange   [ '0.0.1',
+28 silly addNameRange     '0.0.2',
+28 silly addNameRange     '0.1.0',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.2.1',
+28 silly addNameRange     '0.2.2',
+28 silly addNameRange     '0.2.3',
+28 silly addNameRange     '0.2.4',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.4.0',
+28 silly addNameRange     '0.4.1',
+28 silly addNameRange     '0.5.0',
+28 silly addNameRange     '0.5.1',
+28 silly addNameRange     '0.5.2',
+28 silly addNameRange     '0.5.3',
+28 silly addNameRange     '0.5.4',
+28 silly addNameRange     '0.5.5',
+28 silly addNameRange     '0.5.6',
+28 silly addNameRange     '0.5.7',
+28 silly addNameRange     '0.6.0',
+28 silly addNameRange     '0.6.1',
+28 silly addNameRange     '0.6.3',
+28 silly addNameRange     '0.7.0',
+28 silly addNameRange     '0.7.1',
+28 silly addNameRange     '0.8.0',
+28 silly addNameRange     '0.8.1',
+28 silly addNameRange     '0.8.2',
+28 silly addNameRange     '0.8.3',
+28 silly addNameRange     '0.8.4',
+28 silly addNameRange     '0.8.5',
+28 silly addNameRange     '0.8.6',
+28 silly addNameRange     '0.8.7',
+28 silly addNameRange     '0.8.8',
+28 silly addNameRange     '0.8.9',
+28 silly addNameRange     '0.9.0',
+28 silly addNameRange     '0.9.1',
+28 silly addNameRange     '0.9.2',
+28 silly addNameRange     '0.9.3',
+28 silly addNameRange     '0.10.0',
+28 silly addNameRange     '0.10.1',
+28 silly addNameRange     '0.10.2',
+28 silly addNameRange     '0.10.3',
+28 silly addNameRange     '0.10.4',
+28 silly addNameRange     '0.10.5',
+28 silly addNameRange     '0.10.6',
+28 silly addNameRange     '0.10.7',
+28 silly addNameRange     '0.11.0',
+28 silly addNameRange     '0.11.1',
+28 silly addNameRange     '0.12.0',
+28 silly addNameRange     '0.12.1',
+28 silly addNameRange     '0.12.2',
+28 silly addNameRange     '0.12.3',
+28 silly addNameRange     '0.12.4',
+28 silly addNameRange     '0.13.0',
+28 silly addNameRange     '0.14.0',
+28 silly addNameRange     '0.14.1',
+28 silly addNameRange     '0.14.2',
+28 silly addNameRange     '0.15.0',
+28 silly addNameRange     '0.15.1',
+28 silly addNameRange     '0.15.2',
+28 silly addNameRange     '0.15.3',
+28 silly addNameRange     '0.15.4',
+28 silly addNameRange     '0.16.0',
+28 silly addNameRange     '0.16.1',
+28 silly addNameRange     '0.16.2',
+28 silly addNameRange     '0.16.3',
+28 silly addNameRange     '0.16.4',
+28 silly addNameRange     '0.17.0',
+28 silly addNameRange     '0.18.0',
+28 silly addNameRange     '0.19.0',
+28 silly addNameRange     '0.20.0',
+28 silly addNameRange     '0.20.1',
+28 silly addNameRange     '0.20.2',
+28 silly addNameRange     '0.20.3',
+28 silly addNameRange     '0.21.0',
+28 silly addNameRange     '0.22.0',
+28 silly addNameRange     '0.22.1',
+28 silly addNameRange     '0.23.0',
+28 silly addNameRange     '0.24.0',
+28 silly addNameRange     '0.25.0',
+28 silly addNameRange     '0.26.0',
+28 silly addNameRange     '0.26.1',
+28 silly addNameRange     '0.26.2',
+28 silly addNameRange     '0.26.3',
+28 silly addNameRange     '0.27.0',
+28 silly addNameRange     '0.27.1',
+28 silly addNameRange     '0.27.2',
+28 silly addNameRange     '0.27.3',
+28 silly addNameRange     '0.27.4',
+28 silly addNameRange     '0.27.5',
+28 silly addNameRange     '0.27.6',
+28 silly addNameRange     '0.27.7',
+28 silly addNameRange     '0.28.0',
+28 silly addNameRange     '0.28.1',
+28 silly addNameRange     '0.28.2',
+28 silly addNameRange     '0.29.0',
+28 silly addNameRange     '0.30.0',
+28 silly addNameRange     '0.31.0',
+28 silly addNameRange     '0.31.1',
+28 silly addNameRange     '0.31.2',
+28 silly addNameRange     '0.32.0',
+28 silly addNameRange     '0.33.0',
+28 silly addNameRange     '0.34.0',
+28 silly addNameRange     '0.34.1',
+28 silly addNameRange     '0.35.0' ] ]
+29 verbose addNamed [ 'jade', '0.35.0' ]
+30 verbose addNamed [ '0.35.0', '0.35.0' ]
+31 silly lockFile 606948c4-jade-0-35-0 jade@0.35.0
+32 verbose lock jade@0.35.0 /Users/burkeholland/.npm/606948c4-jade-0-35-0.lock
+33 verbose read json /Users/burkeholland/.npm/jade/0.35.0/package/package.json
+34 silly lockFile 606948c4-jade-0-35-0 jade@0.35.0
+35 silly lockFile 606948c4-jade-0-35-0 jade@0.35.0
+36 silly lockFile 51d481b2-jade jade@
+37 silly lockFile 51d481b2-jade jade@
+38 silly resolved [ { name: 'jade',
+38 silly resolved     description: 'Jade template engine',
+38 silly resolved     version: '0.35.0',
+38 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+38 silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/jade' },
+38 silly resolved     main: './index.js',
+38 silly resolved     bin: { jade: './bin/jade' },
+38 silly resolved     man: [ './jade.1' ],
+38 silly resolved     dependencies:
+38 silly resolved      { commander: '2.0.0',
+38 silly resolved        mkdirp: '0.3.x',
+38 silly resolved        transformers: '2.1.0',
+38 silly resolved        'character-parser': '1.2.0',
+38 silly resolved        monocle: '1.1.50',
+38 silly resolved        with: '~1.1.0',
+38 silly resolved        constantinople: '~1.0.1' },
+38 silly resolved     devDependencies:
+38 silly resolved      { 'coffee-script': '*',
+38 silly resolved        mocha: '*',
+38 silly resolved        markdown: '*',
+38 silly resolved        stylus: '*',
+38 silly resolved        uubench: '*',
+38 silly resolved        should: '*',
+38 silly resolved        less: '*',
+38 silly resolved        'uglify-js': '*',
+38 silly resolved        browserify: '*',
+38 silly resolved        linify: '*' },
+38 silly resolved     component: { scripts: [Object] },
+38 silly resolved     scripts:
+38 silly resolved      { test: 'mocha -R spec',
+38 silly resolved        prepublish: 'npm prune && linify transform bin && npm run build',
+38 silly resolved        build: 'npm run compile',
+38 silly resolved        compile: 'npm run compile-full && npm run compile-runtime',
+38 silly resolved        'compile-full': 'browserify ./lib/jade.js --standalone jade -x ./node_modules/transformers > jade.js',
+38 silly resolved        'compile-runtime': 'browserify ./lib/runtime.js --standalone jade > runtime.js' },
+38 silly resolved     browser: { './lib/filters.js': './lib/filters-client.js' },
+38 silly resolved     readme: '# [![Jade - template engine ](http://i.imgur.com/5zf2aVt.png)](http://jade-lang.com/)\r\n\r\nFull documentation is at [jade-lang.com](http://jade-lang.com/)\r\n\r\n Jade is a high performance template engine heavily influenced by [Haml](http://haml-lang.com)\r\n and implemented with JavaScript for [node](http://nodejs.org). For discussion join the [Google Group](http://groups.google.com/group/jadejs).\r\n\r\n You can test drive Jade online [here](http://naltatis.github.com/jade-syntax-docs).\r\n\r\n [![Build Status](https://travis-ci.org/visionmedia/jade.png?branch=master)](https://travis-ci.org/visionmedia/jade)\r\n [![Dependency Status](https://gemnasium.com/visionmedia/jade.png)](https://gemnasium.com/visionmedia/jade)\r\n [![NPM version](https://badge.fury.io/js/jade.png)](http://badge.fury.io/js/jade)\r\n\r\n## Announcements\r\n\r\n**Deprecation of implicit script/style text-only:**\r\n\r\n Jade version 0.31.0 deprecated implicit text only support for scripts and styles.  To fix this all you need to do is add a `.` character after the script or style tag.\r\n\r\n It is hoped that this change will make Jade easier for newcomers to learn without affecting the power of the language or leading to excessive verboseness.\r\n\r\n If you have a lot of Jade files that need fixing you can use [fix-jade](https://github.com/ForbesLindesay/fix-jade) to attempt to automate the process.\r\n\r\n**Command line option change:**\r\n\r\nsince `v0.31.0`, `-o` is preferred for `--out` where we used `-O` before.\r\n\r\n## Installation\r\n\r\nvia npm:\r\n\r\n```bash\r\n$ npm install jade\r\n```\r\n\r\n## Syntax\r\n\r\nJade is a clean, whitespace sensitive syntax for writing html.  Here is a simple example:\r\n\r\n```jade\r\ndoctype 5\r\nhtml(lang="en")\r\n  head\r\n    title= pageTitle\r\n    script(type=\'text/javascript\').\r\n      if (foo) bar(1 + 5)\r\n  body\r\n    h1 Jade - node template engine\r\n    #container.col\r\n      if youAreUsingJade\r\n        p You are amazing\r\n      else\r\n        p Get on it!\r\n      p.\r\n        Jade is a terse and simple templating language with a\r\n        strong focus on performance and powerful features.\r\n```\r\n\r\nbecomes\r\n\r\n\r\n```html\r\n<!DOCTYPE html>\r\n<html lang="en">\r\n  <head>\r\n    <title>Jade</title>\r\n    <script type="text/javascript">\r\n      if (foo) bar(1 + 5)\r\n    </script>\r\n  </head>\r\n  <body>\r\n    <h1>Jade - node template engine</h1>\r\n    <div id="container" class="col">\r\n      <p>You are amazing</p>\r\n      <p>Jade is a terse and simple templating language with a strong focus on performance and powerful features.</p>\r\n    </div>\r\n  </body>\r\n</html>\r\n```\r\n\r\nThe official [jade tutorial](http://jade-lang.com/tutorial/) is a great place to start.  While that (and the syntax documentation) is being finished, you can view some of the old documentation [here](https://github.com/visionmedia/jade/blob/master/jade.md) and [here](https://github.com/visionmedia/jade/blob/master/jade-language.md)\r\n\r\n## API\r\n\r\nFor full API, see [jade-lang.com/api](http://jade-lang.com/api/)\r\n\r\n```js\r\nvar jade = require(\'jade\');\r\n\r\n// compile\r\nvar fn = jade.compile(\'string of jade\', options);\r\nvar html = fn(locals);\r\n\r\n// render\r\nvar html = jade.render(\'string of jade\', merge(options, locals));\r\n\r\n// renderFile\r\nvar html = jade.renderFile(\'filename.jade\', merge(options, locals));\r\n```\r\n\r\n### Options\r\n\r\n - `filename`  Used in exceptions, and required when using includes\r\n - `compileDebug`  When `false` no debug instrumentation is compiled\r\n - `pretty`    Add pretty-indentation whitespace to output _(false by default)_\r\n\r\n## Browser Support\r\n\r\n The latest version of jade can be download for the browser in standalone form from [here](https://github.com/visionmedia/jade/raw/master/jade.js).  It only supports the very latest browsers though, and is a large file.  It is recommended that you pre-compile your jade templates to JavaScript and then just use the [runtime.js](https://github.com/visionmedia/jade/raw/master/runtime.js) library on the client.\r\n\r\n To compile a template for use on the client using the command line, do:\r\n\r\n```console\r\n$ jade --client --no-debug filename.jade\r\n```\r\n\r\nwhich will produce `filename.js` containing the compiled template.\r\n\r\n## Command Line\r\n\r\nAfter installing the latest version of [node](http://nodejs.org/), install with:\r\n\r\n```console\r\n$ npm install jade -g\r\n```\r\n\r\nand run with\r\n\r\n```console\r\n$ jade --help\r\n```\r\n\r\n## Additional Resources\r\n\r\nTutorials:\r\n\r\n  - cssdeck interactive [Jade syntax tutorial](http://cssdeck.com/labs/learning-the-jade-templating-engine-syntax)\r\n  - cssdeck interactive [Jade logic tutorial](http://cssdeck.com/labs/jade-templating-tutorial-codecast-part-2)\r\n  - in [Japanese](http://blog.craftgear.net/4f501e97c1347ec934000001/title/10%E5%88%86%E3%81%A7%E3%82%8F%E3%81%8B%E3%82%8Bjade%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3)\r\n\r\n\r\nImplementations in other languages:\r\n\r\n  - [php](http://github.com/everzet/jade.php)\r\n  - [scala](http://scalate.fusesource.org/versions/snapshot/documentation/scaml-reference.html)\r\n  - [ruby](https://github.com/slim-template/slim)\r\n  - [python](https://github.com/SyrusAkbary/pyjade)\r\n  - [java](https://github.com/neuland/jade4j)\r\n\r\nOther:\r\n\r\n  - [Emacs Mode](https://github.com/brianc/jade-mode)\r\n  - [Vim Syntax](https://github.com/digitaltoad/vim-jade)\r\n  - [TextMate Bundle](http://github.com/miksago/jade-tmbundle)\r\n  - [Coda/SubEtha syntax Mode](https://github.com/aaronmccall/jade.mode)\r\n  - [Screencasts](http://tjholowaychuk.com/post/1004255394/jade-screencast-template-engine-for-nodejs)\r\n  - [html2jade](https://github.com/donpark/html2jade) converter\r\n\r\n## License\r\n\r\nMIT\r\n',
+38 silly resolved     readmeFilename: 'Readme.md',
+38 silly resolved     bugs: { url: 'https://github.com/visionmedia/jade/issues' },
+38 silly resolved     _id: 'jade@0.35.0',
+38 silly resolved     _from: 'jade@' } ]
+39 info install jade@0.35.0 into /usr/local/lib
+40 info installOne jade@0.35.0
+41 verbose from cache /Users/burkeholland/.npm/jade/0.35.0/package/package.json
+42 info /usr/local/lib/node_modules/jade unbuild
+43 verbose read json /usr/local/lib/node_modules/jade/package.json
+44 verbose tar unpack /Users/burkeholland/.npm/jade/0.35.0/package.tgz
+45 silly lockFile 537c17f0--usr-local-lib-node-modules-jade tar:///usr/local/lib/node_modules/jade
+46 verbose lock tar:///usr/local/lib/node_modules/jade /Users/burkeholland/.npm/537c17f0--usr-local-lib-node-modules-jade.lock
+47 silly lockFile a4d24913-land-npm-jade-0-35-0-package-tgz tar:///Users/burkeholland/.npm/jade/0.35.0/package.tgz
+48 verbose lock tar:///Users/burkeholland/.npm/jade/0.35.0/package.tgz /Users/burkeholland/.npm/a4d24913-land-npm-jade-0-35-0-package-tgz.lock
+49 silly gunzTarPerm modes [ '755', '644' ]
+50 error Error: EACCES, mkdir '/usr/local/lib/node_modules/jade'
+50 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/jade']
+50 error   errno: 3,
+50 error   code: 'EACCES',
+50 error   path: '/usr/local/lib/node_modules/jade',
+50 error   fstream_type: 'Directory',
+50 error   fstream_path: '/usr/local/lib/node_modules/jade',
+50 error   fstream_class: 'DirWriter',
+50 error   fstream_stack:
+50 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+50 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53',
+50 error      'Object.oncomplete (fs.js:107:15)' ] }
+51 error Please try running this command again as root/Administrator.
+52 error System Darwin 13.0.0
+53 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "jade"
+54 error cwd /Users/burkeholland/dev/telerik/everlive-demos/node/registration-and-login/views
+55 error node -v v0.10.12
+56 error npm -v 1.2.32
+57 error path /usr/local/lib/node_modules/jade
+58 error fstream_path /usr/local/lib/node_modules/jade
+59 error fstream_type Directory
+60 error fstream_class DirWriter
+61 error code EACCES
+62 error errno 3
+63 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/jade'
+64 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+64 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53
+64 error fstream_stack Object.oncomplete (fs.js:107:15)
+65 verbose exit [ 3, true ]

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>
+      Dashboard :: Register
+    </title>
+    <link rel="stylesheet" href="//cdn.kendostatic.com/2013.3.1119/styles/kendo.common.min.css">
+    <link rel="stylesheet" href="//cdn.kendostatic.com/2013.3.1119/styles/kendo.bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+  
+  <body>
+    <div class="login well">
+      <h1>
+        Welcome aboard!
+      </h1>
+      <hr>
+      <form id="register-form" method="POST" action="/register" novalidate>
+        <div class="form-group">
+          <label for="display">
+            Display Name
+          </label>
+          <input type="text" name="display" id="display" placeholder="Enter display name"
+          required data-required-msg="Display Name is required" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="username">
+            Username
+          </label>
+          <input type="text" name="username" id="username" placeholder="Enter username"
+          required data-required-msg="Username is required" class="form-control"
+          data-available data-available-url="validate/username" 
+          data-available-msg="The username #: data # is not available">
+        </div>
+        <div class="form-group">
+          <label for="password">
+            Password
+          </label>
+          <input type="password" name="password" id="password" placeholder="Enter password"
+          required data-required-msg="Password is required" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">
+            Confirm Password
+          </label>
+          <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password"
+          required data-required-msg="Please confirm your password" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="email">
+            Email
+          </label>
+          <input type="email" name="email" id="email" placeholder="Enter email"
+          required data-required-msg="Email address is required" class="form-control"
+          data-available data-available-url="validate/email" 
+          data-available-msg="There is already an account associated with this email address">
+        </div>
+        <div class="form-group">
+          <label for="confirm-email">
+            Confirm Email
+          </label>
+          <input type="email" name="confirm-email" id="confirm-email" placeholder="Confirm email"
+          required data-required-msg="Please confirm your email address" class="form-control"
+          data-matches="#email" data-matches-msg="The email addresses do not match">
+        </div>
+        <div class="form-group">
+          <button class="btn btn-default">
+            Register
+          </button>
+          <a href="login">Or Login</a>
+        </div>
+      </form>
+    </div>
+  </body>
+  
+  <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="javascripts/everlive.all.min.js"></script>
+  <script src="//cdn.kendostatic.com/2013.3.1119/js/kendo.all.min.js"></script>
+  <script src="javascripts/validate.js"></script>
+
+</html>

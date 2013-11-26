@@ -1,0 +1,18 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "3.0.3",
+    "jade": "*"
+  },
+  "devDependencies": {
+    "everlive-sdk": "~1.1.4",
+    "express-validator": "~1.0.0",
+    "ejs": "~0.8.5",
+    "jade": "~0.35.0"
+  }
+}

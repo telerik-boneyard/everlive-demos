@@ -1,0 +1,57 @@
+doctype 5
+html
+  head
+    title Dashboard :: Register
+    link(rel='stylesheet', href='//cdn.kendostatic.com/2013.3.1119/styles/kendo.common.min.css')
+    link(rel='stylesheet', href='//cdn.kendostatic.com/2013.3.1119/styles/kendo.bootstrap.min.css')
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='stylesheets/style.css')
+  body
+    .login.well
+      h1  Welcome aboard!
+      hr
+      form(id='register-form', method='POST', action='/register' novalidate)
+        .form-group
+          label(for='display') Display Name
+          input(type='text', name='display', class='form-control', 
+            id='display', placeholder='Enter display name', 
+            required, data-required-msg='Display Name is required')
+        .form-group
+          label(for='username') Username
+          input(type='text', name='username', class='form-control', 
+            id='username', placeholder='Enter username', 
+            required, data-required-msg='Username is required'
+            data-available data-available-url="validate/username" 
+            data-available-msg="The username #: data # is not available")
+        .form-group
+          label(for='password') Password
+          input(type='password', name='password', class='form-control', 
+            id='password', placeholder='Enter password'
+            required, data-required-msg='Password is required')
+        .form-group
+          label(for='confirm-password') Confirm Password
+          input(type='password', name='confirm-password', class='form-control', 
+            id='confirm-password', placeholder='Confirm password'
+            required, data-required-msg="Please confirm your password"
+            data-matches='#password' data-matches-msg='The passwords do not match')
+        .form-group
+          label(for='email') Email
+          input(type='email', name='email', class='form-control', 
+            id='email', placeholder='Enter email',
+            required data-required-msg='Email address is required'
+            data-available data-available-url="validate/email" 
+            data-available-msg="There is already an account associated with this email address")    
+        .form-group
+          label(for='confirm-email') Confirm Email
+          input(type='email', name='confirm-email', class='form-control', 
+            id='confirm-email', placeholder='Confirm email',
+            required data-required-msg='Please confirm your email address',
+            data-matches='#email' data-matches-msg='The email addresses do not match')
+        .form-group
+          button.btn.btn-default Register
+          a(href="login") Or Login
+        include messages
+
+  script(src='//code.jquery.com/jquery-1.9.1.min.js')
+  script(src='//cdn.kendostatic.com/2013.3.1119/js/kendo.all.min.js')
+  script(src='javascripts/validate.js')
